@@ -2,18 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@pinia/nuxt', '@nuxt/devtools', '@nuxt/eslint', '@nuxt/fonts'],
-
-  routeRules: {
-    "/api/**": {
-      proxy: { to: `${process.env.API_LATIHAN}/api/**` },
-    },
-    
-  },
-  runtimeConfig: {
-    public: {
-      apiLatihan: process.env.API_LATIHAN,
-    },
-  },
+  modules: ['@pinia/nuxt', '@nuxt/devtools', '@nuxt/eslint', '@nuxt/fonts']
 
 })
